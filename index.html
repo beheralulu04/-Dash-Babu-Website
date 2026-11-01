@@ -94,6 +94,34 @@ alt="Dash Babu Logo">
 <h2>ଆମ ସହ ଯୋଗାଯୋଗ କରନ୍ତୁ</h2>
 <p>Dash Babu Transport & Tour</p>
 <p>Phone: 9337350029</p>
+  <h2>Book Your Transport</h2>
+
+<form id="bookingForm">
+
+  <input type="text" id="name"
+  placeholder="Your Name" required>
+
+  <input type="tel" id="phone"
+  placeholder="Mobile Number" required>
+
+  <select id="service" required>
+    <option value="">Select Service</option>
+    <option>Transport</option>
+    <option>Tour & Travel</option>
+    <option>Goods Delivery</option>
+  </select>
+
+  <input type="text" id="pickup"
+  placeholder="Pickup Location" required>
+
+  <input type="text" id="drop"
+  placeholder="Drop Location" required>
+
+  <button type="submit">
+    Send Booking on WhatsApp
+  </button>
+
+</form>
 <a class="btn call" href="tel:9337350029">Call Us</a>
 <a class="btn whatsapp" href="https://wa.me/919337350029">Chat on WhatsApp</a>
 </section>
@@ -102,6 +130,33 @@ alt="Dash Babu Logo">
 <p>© 2026 Dash Babu Transport & Tour</p>
 <p>Thank you for choosing us!</p>
 </footer>
+<script>
+document.getElementById("bookingForm")
+.addEventListener("submit", function(e) {
 
+  e.preventDefault();
+
+  let name = document.getElementById("name").value;
+  let phone = document.getElementById("phone").value;
+  let service = document.getElementById("service").value;
+  let pickup = document.getElementById("pickup").value;
+  let drop = document.getElementById("drop").value;
+
+  let message =
+"New Booking Enquiry\n" +
+"Name: " + name + "\n" +
+"Phone: " + phone + "\n" +
+"Service: " + service + "\n" +
+"Pickup: " + pickup + "\n" +
+"Drop: " + drop;
+
+  window.open(
+    "https://wa.me/919337350029?text=" +
+    encodeURIComponent(message),
+    "_blank"
+  );
+
+});
+</script>
 </body>
 </html>
