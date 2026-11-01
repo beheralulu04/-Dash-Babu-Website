@@ -5,71 +5,91 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dash Babu Transport & Tour</title>
+<meta name="description" content="Dash Babu Transport and Tour - Safe Transport and Travel Services. Contact us today.">
 <style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f5f7fa;
-  text-align: center;
-}
-header {
-  background: #102b50;
-  color: white;
-  padding: 30px 15px;
-}
-h1 { font-size: 27px; }
-.hero { padding: 35px 15px; }
-h2 { color: #102b50; }
-.service {
-  background: white;
-  margin: 15px;
-  padding: 20px;
-  border-radius: 12px;
-}
-a {
-  display: inline-block;
-  padding: 13px 22px;
-  margin: 8px;
-  background: #16834a;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-}
-footer {
-  background: #102b50;
-  color: white;
-  padding: 20px;
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f4f7fc;color:#172b4d}
+header{background:#09264b;color:white;padding:22px 15px;text-align:center}
+.logo{font-size:42px}
+header h1{margin:5px;font-size:27px}
+header p{color:#ffb02e;margin:8px}
+nav{background:#ff9d00;padding:13px;text-align:center}
+nav a{color:#10264a;text-decoration:none;font-weight:bold;margin:0 9px}
+.hero{background:linear-gradient(135deg,#09264b,#17538a);color:white;padding:55px 20px;text-align:center}
+.hero h2{font-size:30px}
+.hero p{line-height:1.8}
+.btn{display:inline-block;padding:13px 22px;border-radius:8px;text-decoration:none;font-weight:bold;margin:7px}
+.call{background:#ff9d00;color:#09264b}
+.whatsapp{background:#20b75a;color:white}
+section{padding:30px 15px;text-align:center}
+h2{color:#10365f}
+.services{display:grid;grid-template-columns:1fr 1fr;gap:13px;max-width:700px;margin:auto}
+.card{background:white;padding:22px 10px;border-radius:12px;box-shadow:0 3px 12px #0001}
+.card h3{color:#10365f}
+.card p{font-size:14px;line-height:1.6}
+.contact{background:#e4edf8;padding:30px 15px}
+footer{background:#09264b;color:white;padding:22px;text-align:center}
+footer p{margin:8px}
+@media(max-width:400px){
+.services{grid-template-columns:1fr}
+.hero h2{font-size:25px}
 }
 </style>
 </head>
 <body>
 
 <header>
-<h1>Dash Babu</h1>
-<h2 style="color:white">Transport & Tour</h2>
-<p>ଆପଣଙ୍କ ସୁରକ୍ଷିତ ଯାତ୍ରା ଆମର ଲକ୍ଷ୍ୟ</p>
+<div class="logo">🚚</div>
+<h1>DASH BABU</h1>
+<p>TRANSPORT & TOUR</p>
 </header>
 
-<section class="hero">
+<nav>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<div class="hero" id="home">
 <h2>Welcome to Dash Babu</h2>
-<p>ସୁରକ୍ଷିତ Transport ଓ Tour Service ପାଇଁ ଆମକୁ ଯୋଗାଯୋଗ କରନ୍ତୁ।</p>
-<a href="tel:9337350029">Call Now</a>
-<a href="https://wa.me/919337350029">WhatsApp</a>
+<p>ଆପଣଙ୍କ ସାମଗ୍ରୀ ସୁରକ୍ଷିତ ଭାବରେ ଠିକ୍ ସ୍ଥାନରେ ପହଞ୍ଚାଇବା ଆମର ଦାୟିତ୍ୱ।</p>
+<a class="btn call" href="tel:9337350029">📞 Call Now</a>
+<a class="btn whatsapp" href="https://wa.me/919337350029">WhatsApp</a>
+</div>
+
+<section id="services">
+<h2>ଆମର ସେବା</h2>
+<div class="services">
+<div class="card">
+<h3>🚚 Transport</h3>
+<p>ଆପଣଙ୍କ ସାମଗ୍ରୀ ପରିବହନ ପାଇଁ ଆମ ସହ ଯୋଗାଯୋଗ କରନ୍ତୁ।</p>
+</div>
+<div class="card">
+<h3>🚗 Tour & Travel</h3>
+<p>ସୁନ୍ଦର ଓ ସୁରକ୍ଷିତ ଯାତ୍ରା ପାଇଁ ଆମକୁ ବାଛନ୍ତୁ।</p>
+</div>
+<div class="card">
+<h3>📦 Goods Delivery</h3>
+<p>ସାମଗ୍ରୀ ପଠାଇବା ପାଇଁ Enquiry କରନ୍ତୁ।</p>
+</div>
+<div class="card">
+<h3>📞 Customer Support</h3>
+<p>ସେବା ସମ୍ବନ୍ଧୀୟ ସୂଚନା ପାଇଁ ଫୋନ୍ କରନ୍ତୁ।</p>
+</div>
+</div>
 </section>
 
-<div class="service">
-<h2>🚚 Transport Service</h2>
-<p>ଆପଣଙ୍କ ସାମଗ୍ରୀ ସୁରକ୍ଷିତ ଭାବରେ ଠିକ୍ ସ୍ଥାନରେ ପହଞ୍ଚାଇବା।</p>
-</div>
-
-<div class="service">
-<h2>🚗 Tour & Travel</h2>
-<p>ଆପଣଙ୍କ ଯାତ୍ରାକୁ ସୁନ୍ଦର ଓ ସୁରକ୍ଷିତ କରିବା।</p>
-</div>
+<section class="contact" id="contact">
+<h2>ଆମ ସହ ଯୋଗାଯୋଗ କରନ୍ତୁ</h2>
+<p>Dash Babu Transport & Tour</p>
+<p>Phone: 9337350029</p>
+<a class="btn call" href="tel:9337350029">Call Us</a>
+<a class="btn whatsapp" href="https://wa.me/919337350029">Chat on WhatsApp</a>
+</section>
 
 <footer>
-<p>Dash Babu Transport & Tour</p>
-<p>Contact: 9337350029</p>
+<p>© 2026 Dash Babu Transport & Tour</p>
+<p>Thank you for choosing us!</p>
 </footer>
 
 </body>
